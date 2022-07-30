@@ -1,0 +1,60 @@
+name: procari_web
+description: Procaris website
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_route: ^3.2.4
+  easy_localization: ^3.0.1
+  responsive_framework: ^0.1.5
+  skyicons:
+    git:
+      url: https://github.com/Procari/SkyIcons.git
+      
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.1.7
+  auto_route_generator: ^3.2.3
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/
+    - graphics/
+    - assets/translations/
+  
+  fonts:
+    - family: ArminaExtraLight
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-ExtraLight.ttf
+    - family: ArminaLight
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-Light.ttf
+    - family: ArminaRegular
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-Regular.ttf
+    - family: ArminaMedium
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-Medium.ttf
+    - family: ArminaSemiBold
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-Bold.ttf
+    - family: ArminaBold
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-ExtraBold.ttf
+    - family: ArminaBlack
+      fonts:
+        - asset: assets/fonts/ArimaMadurai-Black.ttf
+  
+
